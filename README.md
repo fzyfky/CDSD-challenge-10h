@@ -79,7 +79,7 @@ The baseline system consists of three stages of training:
 
 - The baseline code we provided will output FAR and FRR under different thresholds during the test phase (stage 3). However, in the test phase of the challenge, participants are only allowed to submit a final wake-up result for each speech clip. Also, during the test phase, we will not provide annotations for eval in the test set. This means that participants need to think about how to choose the appropriate threshold.
 - Participants may use all methods to improve the final results, including the use of pre-trained models and other open-source datasets, provided that this is explicitly stated in the final paper or system report submitted.
-- If the scores of the two teams on the test data set are the same, the system with lower computation complexity will be judged as the superior one. In this case, participants will be asked to provide proof of computational complexity. Therefore, participants are strongly advised to retain their code for verification purposes.
+- If the scores of the two teams on the test data set are the same, the system with faster speech recognition speed will be judged as superior.. In this case, participants will be asked to provide proof of computational complexity. Therefore, participants are strongly advised to retain their code for verification purposes.
 
 ## License
 
@@ -87,4 +87,4 @@ It is noted that the code can only be used for comparative or benchmarking purpo
 
 ## Contact
 
-Please contact e-mail [lrdwws_challenge@aishelldata.com](mailto:lrdwws_challenge@aishelldata.com) if you have any queries.
+Please contact e-mail [1296630808@qq.com](mailto:1296630808@qq.com) if you have any queries.
