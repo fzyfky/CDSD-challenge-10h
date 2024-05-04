@@ -39,37 +39,41 @@ pip install -r requirements.txt
 ## Baseline
 
 ```
-cd examples/lrd/s0
+cd s0
 ```
 
 The baseline system consists of three stages of training:
 
-1. Training a Speaker-Independent Control KWS model (SIC) from scratch using Control data in the train set.
+1. Data preprocessing, dictionary creation, data preparation
 
    ```
-   bash run_control.sh --stage 0 --stop_stage 3
+   bash run.sh --stage 0 --stop-stage 3
    ```
 
-2. Fine-tuning the SIC model with Uncontrol data in the train set to obtain a Speaker-Independent Dysarthria KWS model (SID).
+2. Start training
 
    ```
-   bash run_uncontrol.sh --stage 0 --stop_stage 3
+   bash run.sh --stage 4 --stop-stage 4
    ```
 
-3. Fine-tuning the SID model with enrollment data in the dev set to obtain Speaker-Dependent Dysarthria KWS systems (SDD) for each individual. The final wake-up performance is evaluated on the corresponding individual's eval set.
+3. decoder,calculate wer
 
    ```
-   bash run_enrollment.sh --stage 0 --stop_stage 3
+   bash run.sh --stage 5 --stop-stage 5
    ```
 
 ### Results of dev set
 
-| Model      | Test set        | Intelligibility | FAR    | FRR   | Score  |
-| ---------- | --------------- | --------------- | ------ | ----- | ------ |
-| SDD_DF0016 | dev/eval/DF0016 | 93.73           | 0.0534 | 0.05  | 0.1034 |
-| SDD_DM0005 | dev/eval/DM0005 | 85.78           | 0.0193 | 0.125 | 0.1443 |
-| SDD_DF0015 | dev/eval/DF0015 | 68.44           | 0.035  | 0.075 | 0.11   |
-| SDD_DM0019 | dev/eval/DM0019 | 47.95           | 0.0688 | 0.175 | 0.2438 |
+| Model      | Test set        |   WER   |
+| ---------- | --------------- | ------- | 
+| CDSD-SD-01 | CDSD-10h-01     |  10.91  |
+| CDSD-SD-04 | CDSD-10h-04     |  31.16  |
+| CDSD-SD-06 | CDSD-10h-06     |  42.55  | 
+| CDSD-SD-08 | CDSD-10h-08     |  24.83  |
+| CDSD-SD-09 | CDSD-10h-01     |  24.30  |
+| CDSD-SD-10 | CDSD-10h-10     |  29.60  |
+| CDSD-SD-12 | CDSD-10h-12     |  13.08  |
+
 
 ## Notice
 
