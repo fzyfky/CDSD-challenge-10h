@@ -11,25 +11,14 @@ The code in this repository is based on the Wenet(https://github.com/wenet-e2e/w
 Before running this baseline, you should have downloaded and unzipped the dataset for this challenge, whose folder structure is as follows:
 
 ```
-lrdwws
-├── dev
-│   ├── Intelligibility.xlsx
-│   ├── README.txt
-│   ├── enrollment
-│   │   ├── transcript
-│   │   └── wav
-│   └── eval
-│       ├── transcript
-│       └── wav
-└── train
-    ├── Control
-    │   ├── transcript
-    │   └── wav
-    ├── Intelligibility.xlsx
-    ├── README.txt
-    └── Uncontrol
-        ├── transcript
-        └── wav
+CDSD-1h
+├── 01、02、04、06、08、09、10
+│   ├── wav
+│   │   ├── dev
+│   │   ├── test
+│   │   └── train
+│   └── transcript
+
 ```
 
 ### Notice
@@ -39,9 +28,9 @@ We have released the latest data of the training and development sets and fixed 
 ## Environment Setup
 
 ```
-# create environment
-conda create -n lrdwws python=3.8 -y
-conda activate lrdwws
+conda create -n wenet python=3.8
+conda activate wenet
+pip install -r requirements.txt
 
 # install pytorch torchvision and torchaudio
 conda install pytorch=1.10.0 torchaudio=0.10.0 cudatoolkit=11.1 -c pytorch -c conda-forge
