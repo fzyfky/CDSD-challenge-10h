@@ -32,9 +32,6 @@ conda create -n wenet python=3.8
 conda activate wenet
 pip install -r requirements.txt
 
-# install pytorch torchvision and torchaudio
-conda install pytorch=1.10.0 torchaudio=0.10.0 cudatoolkit=11.1 -c pytorch -c conda-forge
-
 # install other dependence
 pip install -r requirements.txt
 ```
