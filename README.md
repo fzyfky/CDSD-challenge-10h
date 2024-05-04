@@ -1,4 +1,5 @@
-# Dysarthria Speech Recognition Challenge-Speaker Dependence-10h
+# 1.Dysarthria Speech Recognition Challenge-Speaker Dependence-10h
+# 2.Dysarthria Speech Recognition Challenge-Speaker Dependence-1h
 
 ## Introduction
 
