@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This repository is the baseline code for the CDSD (Chinese Dysarthria Speech Database) Challenge.
+This repository is the baseline code for the CDSD-10h (Chinese Dysarthria Speech Database) Challenge and CDSD-1h (Chinese Dysarthria Speech Database) Challenge.
 
 The code in this repository is based on the Wenet(https://github.com/wenet-e2e/wenet)
 
@@ -11,8 +11,16 @@ The code in this repository is based on the Wenet(https://github.com/wenet-e2e/w
 Before running this baseline, you should have downloaded and unzipped the dataset for this challenge, whose folder structure is as follows:
 
 ```
-CDSD-1h
+CDSD-10h
 ├── 01、02、04、06、08、09、10
+│   ├── wav
+│   │   ├── dev
+│   │   ├── test
+│   │   └── train
+│   └── transcript
+
+CDSD-1h
+├── 01~44
 │   ├── wav
 │   │   ├── dev
 │   │   ├── test
@@ -64,15 +72,16 @@ The baseline system consists of three stages of training:
 
 ### Results of dev set
 
-| Model      | Test set        |   WER   |
-| ---------- | --------------- | ------- | 
-| CDSD-SD-01 | CDSD-10h-01     |  10.91  |
-| CDSD-SD-04 | CDSD-10h-04     |  31.16  |
-| CDSD-SD-06 | CDSD-10h-06     |  42.55  | 
-| CDSD-SD-08 | CDSD-10h-08     |  24.83  |
-| CDSD-SD-09 | CDSD-10h-01     |  24.30  |
-| CDSD-SD-10 | CDSD-10h-10     |  29.60  |
-| CDSD-SD-12 | CDSD-10h-12     |  13.08  |
+CDSD-10h-SD                                                            CDSD-1h-SI
+| Model       | Test set        |   WER   |                            | Model       | Test set        |   WER   |
+| ----------  | --------------- | ------- |                            | ----------  | --------------- | ------- |            
+| CDSD-10h-01 | CDSD-10h-01     |  10.91  |                            | CDSD-1h     | CDSD-1h         |  28.87  |
+| CDSD-10h-04 | CDSD-10h-04     |  31.16  |
+| CDSD-10h-06 | CDSD-10h-06     |  42.55  | 
+| CDSD-10h-08 | CDSD-10h-08     |  24.83  |
+| CDSD-10h-09 | CDSD-10h-01     |  24.30  |
+| CDSD-10h-10 | CDSD-10h-10     |  29.60  |
+| CDSD-10h-12 | CDSD-10h-12     |  13.08  |
 
 
 ## Notice
