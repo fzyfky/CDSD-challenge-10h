@@ -1,9 +1,8 @@
-# 1.Dysarthria Speech Recognition Challenge-Speaker Dependence-10h
-# 2.Dysarthria Speech Recognition Challenge-Speaker Dependence-1h
+# Dysarthria Speech Recognition Challenge-Speaker Dependence-10h
 
 ## Introduction
 
-This repository is the baseline code for the CDSD-10h (Chinese Dysarthria Speech Database) Challenge and CDSD-1h (Chinese Dysarthria Speech Database) Challenge.
+This repository is the baseline code for the CDSD-10h (Chinese Dysarthria Speech Database) Challenge .
 
 The code in this repository is based on the Wenet(https://github.com/wenet-e2e/wenet)
 
@@ -20,13 +19,6 @@ CDSD-10h
 │   │   └── train
 │   └── transcript
 
-CDSD-1h
-├── 01~44
-│   ├── wav
-│   │   ├── dev
-│   │   ├── test
-│   │   └── train
-│   └── transcript
 
 ```
 
@@ -73,10 +65,10 @@ The baseline system consists of three stages of training:
 
 ### Results of dev set
 
-CDSD-10h-SD                                                            CDSD-1h-SI
-| Model       | Test set        |   WER   |                            | Model       | Test set        |   WER   |
-| ----------  | --------------- | ------- |                            | ----------  | --------------- | ------- |            
-| CDSD-10h-01 | CDSD-10h-01     |  10.91  |                            | CDSD-1h     | CDSD-1h         |  28.87  |
+CDSD-10h-SD                                                           
+| Model       | Test set        |   WER   |                           
+| ----------  | --------------- | ------- |                                    
+| CDSD-10h-01 | CDSD-10h-01     |  10.91  |                    
 | CDSD-10h-04 | CDSD-10h-04     |  31.16  |
 | CDSD-10h-06 | CDSD-10h-06     |  42.55  | 
 | CDSD-10h-08 | CDSD-10h-08     |  24.83  |
