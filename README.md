@@ -24,8 +24,7 @@ CDSD-10h
 
 ### Notice
 
-We have released the latest data of the training and development sets and fixed the issue with incorrect information that was reported by some teams. We strongly recommend you to get them from the download links in the email and replace all audio and labels from the previously downloaded training and development sets.
-
+We have released the latest data of the training and development sets and fixed the issue with incorrect information that was reported by some teams. 
 ## Environment Setup
 
 ```
@@ -33,8 +32,6 @@ conda create -n wenet python=3.8
 conda activate wenet
 pip install -r requirements.txt
 
-# install other dependence
-pip install -r requirements.txt
 ```
 
 ## Baseline
