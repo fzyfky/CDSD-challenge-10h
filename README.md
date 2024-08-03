@@ -63,7 +63,7 @@ The baseline system consists of three stages of training:
 ### Results of dev set
 
 CDSD-10h-SD                                                           
-| Model       | Test set        |   WER   |                           
+| Model       | Test set        |   CER   |                           
 | ----------  | --------------- | ------- |                                    
 | CDSD-10h-01 | CDSD-10h-01     |  10.91  |                    
 | CDSD-10h-04 | CDSD-10h-04     |  31.16  |
